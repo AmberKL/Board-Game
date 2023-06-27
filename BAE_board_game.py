@@ -217,6 +217,7 @@ while running:
         for i in range(num_players - 1):
             if i >= removed_player_index:
                 players_position[i] = players_position[i + 1]
+            current_player -= 1
 
         #check if there is one player left (the winner)
         if num_players == 1:
